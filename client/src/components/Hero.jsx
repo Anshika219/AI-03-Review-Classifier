@@ -1,3 +1,5 @@
+import { FaRocket, FaInfoCircle } from "react-icons/fa";
+
 function Hero() {
   return (
     <section className="text-center py-20 px-6 bg-gray-100">
@@ -9,9 +11,14 @@ function Hero() {
         Analyze homestay reviews instantly using Artificial Intelligence.
       </p>
 
-      <button className="bg-blue-600 text-white px-6 py-3 rounded-lg">
-        Get Started
-      </button>
+      <div className="flex justify-center gap-4">
+        <button className="flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
+          <FaRocket /> Get Started
+        </button>
+        <button className="flex items-center gap-2 border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition duration-300">
+          <FaInfoCircle /> Learn More
+        </button>
+      </div>
     </section>
   );
 }
