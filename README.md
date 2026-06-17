@@ -21,9 +21,10 @@ The application will allow users to paste one or more guest reviews and automati
 ## Technology Stack
 
 * React.js
-* HTML
-* CSS
+* Vite
+* Tailwind CSS
 * JavaScript
+* Figma
 * Gemini API
 * GitHub
 
