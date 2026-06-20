@@ -3,17 +3,19 @@ import Footer from "../components/Footer";
 
 function Login() {
   return (
-    <>
+    <div className="min-h-screen bg-white text-black dark:bg-slate-950 dark:text-white transition-colors duration-300">
       <Navbar />
 
-      <h1>Login</h1>
+      <div className="min-h-[70vh] flex flex-col items-center justify-center px-4 text-center">
+        <h1 className="text-4xl font-bold mb-4">Login</h1>
 
-      <p>
-        Authentication will be implemented in future versions.
-      </p>
+        <p className="text-gray-600 dark:text-gray-300 max-w-md">
+          Authentication will be implemented in future versions.
+        </p>
+      </div>
 
       <Footer />
-    </>
+    </div>
   );
 }
 

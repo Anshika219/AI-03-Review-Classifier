@@ -2,12 +2,12 @@ import { FaRocket, FaInfoCircle } from "react-icons/fa";
 
 function Hero() {
   return (
-    <section className="text-center py-20 px-6 bg-gray-100">
-      <h1 className="text-3xl md:text-5xl font-bold mb-4">
+    <section className="text-center py-20 px-6 bg-gray-100 dark:bg-slate-900 transition-colors duration-300">
+      <h1 className="text-3xl md:text-5xl font-bold mb-4 dark:text-white">
         AI-Powered Guest Review Analysis
       </h1>
 
-      <p className="text-base md:text-lg text-gray-600 mb-6">
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
         Analyze homestay reviews instantly using Artificial Intelligence.
       </p>
 
