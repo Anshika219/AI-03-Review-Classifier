@@ -1,43 +1,143 @@
-# AI-03 Homestay Guest Review Sentiment Classifier
+# ReviewSense AI – Homestay Review Classifier
 
-## Project Overview
+## Overview
 
-This project is being developed as part of the TBI-GEU Summer Internship Program 2026.
+ReviewSense AI is a full-stack web application that analyzes homestay guest reviews. It allows users to view reviews through a React frontend while the Express.js backend provides REST APIs to manage review data.
 
-The objective of this project is to build an AI-powered web application that analyzes guest reviews for homestays and classifies them based on sentiment and theme. The system will also generate a suggested management response for each review.
+---
 
-## Problem Statement
+## Features
 
-Homestay businesses receive reviews from multiple platforms such as Google, Booking.com, TripAdvisor, and Instagram. Manually reading and categorizing these reviews is time-consuming and inefficient.
+* React + Vite frontend
+* Express.js backend
+* REST API (GET, POST, PUT, DELETE)
+* Search reviews by sentiment
+* Axios integration
+* Loading and error handling
+* Responsive UI
+* Dark mode support
 
-## Proposed Solution
+---
 
-The application will allow users to paste one or more guest reviews and automatically:
+## Tech Stack
 
-* Classify sentiment (Positive, Neutral, Negative)
-* Identify the primary theme (Food, Host, Location, Cleanliness, Value, Experience)
-* Generate a suggested management response
+### Frontend
 
-## Technology Stack
-
-* React.js
+* React
 * Vite
 * Tailwind CSS
-* JavaScript
-* Figma
-* Gemini API
-* GitHub
+* Axios
 
-## Expected Deliverables
+### Backend
 
-* Functional Review Classifier Tool
-* Sentiment Analysis Module
-* Theme Classification Module
-* AI-Generated Response System
-* Testing Report on 20 Reviews
+* Node.js
+* Express.js
+* CORS
+* dotenv
+* Nodemon
+
+---
+
+## Project Structure
+
+```
+AI-03-Review-Classifier/
+│
+├── client/
+│   ├── src/
+│   ├── package.json
+│   └── ...
+│
+├── server/
+│   ├── controllers/
+│   ├── routes/
+│   ├── middleware/
+│   ├── data/
+│   ├── server.js
+│   ├── package.json
+│   └── .env
+│
+└── README.md
+```
+
+---
+
+## How to Run the Frontend
+
+Open a terminal:
+
+```bash
+cd client
+npm install
+npm run dev
+```
+
+Frontend runs on:
+
+```
+http://localhost:5173
+```
+
+---
+
+## How to Run the Backend Locally
+
+Open another terminal:
+
+```bash
+cd server
+npm install
+npm run dev
+```
+
+Backend runs on:
+
+```
+http://localhost:5000
+```
+
+API Endpoint:
+
+```
+GET http://localhost:5000/reviews
+```
+
+---
+
+## Environment Variables
+
+Create a `.env` file inside the `server` folder.
+
+```
+PORT=5000
+```
+
+> The `.env` file is ignored using `.gitignore` and should not be committed to GitHub.
+
+---
+
+## API Endpoints
+
+| Method | Endpoint                     | Description      |
+| ------ | ---------------------------- | ---------------- |
+| GET    | `/reviews`                   | Get all reviews  |
+| GET    | `/reviews/:id`               | Get review by ID |
+| POST   | `/reviews`                   | Add a review     |
+| PUT    | `/reviews/:id`               | Update a review  |
+| DELETE | `/reviews/:id`               | Delete a review  |
+| GET    | `/reviews/search?q=positive` | Search reviews   |
+
+---
+
+## Future Improvements
+
+* AI-powered sentiment analysis
+* User authentication
+* Database integration
+* Review analytics dashboard
+
+---
 
 ## Author
 
-Anshika Gaur
-
-TBI-GEU SIP 2026
+**Anshika Gaur**
