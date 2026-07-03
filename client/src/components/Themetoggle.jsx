@@ -19,9 +19,32 @@ function ThemeToggle() {
   return (
     <button
       onClick={() => setDarkMode(!darkMode)}
-      className="p-2 rounded-lg border border-gray-400 hover:bg-gray-200 dark:hover:bg-slate-700 transition"
+      className="
+        w-11
+        h-11
+        flex
+        items-center
+        justify-center
+        rounded-xl
+        border
+        border-slate-300
+        dark:border-slate-700
+        bg-white
+        dark:bg-slate-900
+        text-slate-700
+        dark:text-yellow-400
+        shadow-sm
+        hover:shadow-lg
+        hover:scale-105
+        transition-all
+        duration-300
+      "
     >
-      {darkMode ? <FaSun /> : <FaMoon />}
+      {darkMode ? (
+        <FaSun className="text-lg" />
+      ) : (
+        <FaMoon className="text-lg" />
+      )}
     </button>
   );
 }
